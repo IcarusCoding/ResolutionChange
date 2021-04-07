@@ -80,12 +80,12 @@ VOID RegisterKey(DWORD id, DWORD mod, DWORD vk) {
 
 BOOL WINAPI CLIHandler(DWORD cEvent) {
 	switch (cEvent) {
-	case CTRL_C_EVENT:
-	case CTRL_CLOSE_EVENT: {
-		std::cout << "Exiting...\n";
-		Sleep(500);
-		break;
-	}
+		case CTRL_C_EVENT:
+		case CTRL_CLOSE_EVENT: {
+			std::cout << "Exiting...\n";
+			Sleep(500);
+			break;
+		}
 	}
 	return FALSE;
 }
